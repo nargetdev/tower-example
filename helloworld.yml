@@ -6,3 +6,9 @@
  
   - name: Hello World!
     shell: echo "Hi! Tower is working."
+    
+   - name: Hello file  World!
+     shell: echo "Hi! Tower is working."
+     path: "{{ lookup('env','HOME') }}/sandbox/from_AWX"
+     state: directory
+     mode: 0755
